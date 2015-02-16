@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="com.dom.test.UserEntity" table="AppUser">
+      <meta attribute="class-description">
+         This class contains the User details. 
+      </meta>
+      <id name="id" type="long" column="id">
+			<generator class="sequence">
+			     <param name="sequence">education_Seq</param>
+			</generator>      </id>
+      <property name="userId" 			column="userid" 			type="string"/>
+      <property name="password" 		column="password" 			type="string"/>
+      <property name="firstName" 		column="firstname" 			type="string"/>
+      <property name="lastName" 		column="lastname" 			type="string"/>
+      <property name="dateOfBirth" 		column="dateofbirth" 		type="string"/>
+      <property name="addressLine1" 	column="addressline1" 		type="string"/>
+      <property name="addressLine2" 	column="addressline2" 		type="string"/>
+      <property name="city" 			column="city" 				type="string"/>
+      <property name="county" 			column="county" 			type="string"/>
+      <property name="postCode" 		column="postcode" 			type="string"/>
+      <property name="countryId" 		column="countryid" 			type="string"/>
+      <property name="schoolName" 		column="schoolname" 		type="string"/>
+      <property name="parentFirstName" 	column="parentfirstname" 	type="string"/>
+      <property name="parentLastName" 	column="parentlastname" 	type="string"/>
+      <property name="parentContactNo" 	column="parentcontactno" 	type="string"/>
+      <property name="parentRelation" 	column="parentrelation" 	type="string"/>
+   </class>
+</hibernate-mapping>

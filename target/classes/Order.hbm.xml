@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+<class name="com.dom.test.Order" table="ORDERS">
+<id name="order_Id" type="int">
+    	<generator class="sequence">
+			     <param name="sequence">examSeq</param>
+			</generator>   
+</id>
+<property name="OrderType" type="string">
+    <column name="ORDER_TYPE" length="20" not-null="true" />
+</property>
+<property name="customerName" type="string">
+    <column name="CUSTOMER_NAME" length="20" not-null="true" />
+</property>
+<property name="OrderDate" type="date">
+    <column name="ORDER_DT" length="7" not-null="true" />
+</property>
+</class>
+</hibernate-mapping>
