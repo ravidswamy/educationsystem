@@ -295,34 +295,6 @@ public class ServiceController {
 		}
 		
 		
-		
-		
-/*	     JSONObject courseObj = new JSONObject();
-	     courseObj.put("id", "1");
-	     courseObj.put("name", "Preparation for 11 Plus exams");
-	     courseObj.put("decription","Preparation for 11-plus exams is suitable for children who are aspiring for grammar school admissions") ;
-	     courseObj.put("course-intro-video","videos/file.mp4");
-
-	     JSONArray instructorArray = new JSONArray() ; ;
-	     instructorArray.put("InstructorId 1") ;
-	     instructorArray.put("InstructorId 2") ;
-	     instructorArray.put("InstructorId 3") ;
-	     
-	     courseObj.put("instructors",instructorArray) ;
-	     
-	     courseObj.put("syllabus","Syllabus 1") ;
-	     
-	     JSONArray subjectArray = new JSONArray() ;
-	     subjectArray.put("SubjectId 1") ;
-	     subjectArray.put("SubjectId 2") ;
-	     subjectArray.put("SubjectId 3") ;
-	     courseObj.put("subjects",subjectArray) ;
-	     courseObj.put("faq","faq.html") ;
-
-	     coursesArray.put(courseObj) ;*/
-	     
-	     System.out.println(coursesArray.toString() ) ;
-		//return jArray;
 	}
 
 
